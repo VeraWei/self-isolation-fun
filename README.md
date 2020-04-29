@@ -45,9 +45,9 @@ $ npm run test:cov
 
 ## Stay in touch
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
+- Author - [Qiuming Wei](https://www.linkedin.com/in/vera-wei-05a873a7/)
 - Website - [LinkedIn](https://www.linkedin.com/in/vera-wei-05a873a7/)
-- Blog - [@vera.wqm](https://medium.com/@vera.wqm)
+- Blog - [Medium @vera.wqm](https://medium.com/@vera.wqm)
 - Twitter - [@qiumingwei1](https://twitter.com/qiumingwei1)
 
 ## License
