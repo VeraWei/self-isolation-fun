@@ -1,6 +1,6 @@
 # self-isolation-fun
 Accompany Buddy back end.
-I did this only because I want to experience full stack technique. Fun is the derivatives.
+Having fun is the top mission.
 
 # Description
 Sometimes you just don't know what to do, and it becomes very easy to draw yourself into self-pity as well as depression. Here are some random options that you might want to try. Self isolation sucks, let's have some fun.
