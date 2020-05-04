@@ -21,6 +21,7 @@ export class JokeService {
             }
         }).pipe(
             map((response) => {
+                console.log(response.data);
                 if (response.data.joke) {
                     response.data.content = response.data.joke;
                     delete response.data.joke;
