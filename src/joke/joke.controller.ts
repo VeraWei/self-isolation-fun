@@ -1,6 +1,6 @@
 import { Controller, Get } from '@nestjs/common';
 import { JokeService } from './joke.service';
-import { Joke } from './joke.entity';
+import JokeEntity from './joke.entity';
 import { AxiosResponse } from 'axios';
 import { Observable } from 'rxjs';
 
@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 export class JokeController {
     constructor(private jokeService: JokeService) {}
     @Get()
-    findRandomOne(): Observable<AxiosResponse<Joke>> {
+    findRandomOne(): Observable<AxiosResponse<JokeEntity>> {
         return this.jokeService.findRandomOne();
     }
 }

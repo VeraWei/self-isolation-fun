@@ -1,13 +1,24 @@
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import { Column, Entity, PrimaryGeneratedColumn, BaseEntity, BeforeUpdate } from 'typeorm';
 
 @Entity()
-export class Joke {
-  @PrimaryGeneratedColumn()
-  id: number;
+export default class UserEntity extends BaseEntity {
+    @PrimaryGeneratedColumn()
+    id: number;
 
-  @Column()
-  joke: string;
+    @Column()
+    name: string;
 
-  @Column()
-  status: number
+    @Column()
+    feel: number;
+    
+    @Column({ type: 'timestamp', default: () => "CURRENT_TIMESTAMP"})
+    created: Date;
+  
+    @Column({ type: 'timestamp', default: () => "CURRENT_TIMESTAMP"})
+    updated: Date;
+  
+    @BeforeUpdate()
+    updateTimestamp() {
+      this.updated = new Date;
+    }
 }

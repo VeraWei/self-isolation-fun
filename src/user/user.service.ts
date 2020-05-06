@@ -1,19 +1,37 @@
 import { Injectable } from '@nestjs/common';
-import { CreateUserDto} from './user.dto';
+import { InjectRepository } from '@nestjs/typeorm';
+import { CreateUserDto, UsersRO } from './user.dto';
+import UserEntity from './user.entity';
+import { Repository, getRepository } from 'typeorm';
 
 @Injectable()
 export class UserService {
-    findAll(): string {
-        return 'testing';
-    }
+    constructor(
+        @InjectRepository(UserEntity)
+        private readonly userRepository: Repository<UserEntity>,
+    ) { }
+    
+    async findAll(): Promise<UsersRO> {
+        const qb = await getRepository(UserEntity)
+        .createQueryBuilder('user')
+        qb.orderBy('user.created', 'DESC');
+    
+        const count = await qb.getCount();
 
-    create(createUserDto: CreateUserDto) {
-        console.log(createUserDto);
+        const users = await qb.getMany();
+
         return {
-            status: 200,
-            content: createUserDto,
-            id: 0,
+            users,
+            count,
         };
     }
-      
+
+    async create(userData: CreateUserDto): Promise<UserEntity> {
+        let user = new UserEntity();
+        user.name = userData.name;
+        user.feel = userData.feel;
+        const newuser = await this.userRepository.save(user);
+
+        return newuser;
+    }
 }

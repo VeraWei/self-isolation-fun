@@ -4,7 +4,7 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { AxiosResponse } from 'axios';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { Joke } from './joke.entity';
+import JokeEntity from './joke.entity';
 import { API } from '../api';
 
 @Injectable()
@@ -14,7 +14,7 @@ export class JokeService {
         // @InjectRepository(Joke)
         // private readonly jokeresposity: Repository<Joke>,
     ) {}
-    findRandomOne(): Observable<AxiosResponse<Joke>> {
+    findRandomOne(): Observable<AxiosResponse<JokeEntity>> {
         return this.httpService.get(API['JOKE'], {
             headers: {
                 'Accept': 'application/json'
