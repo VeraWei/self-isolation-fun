@@ -1,12 +1,13 @@
 {
     "type": "mysql",
-    "host": "accompanybuddy.mysql.database.azure.com",
-    "user": "wei@accompanybuddy",
-    "password": "wqm,22909891",
-    "database": "accompany",
+    "host": "localhost",
     "port": 3306,
+    "username": "root",
+    "password": "",
+    "database": "selfIsolation",
     "entities": [
         "dist/**/*.entity{.ts,.js}"
     ],
-    "autoLoadEntities": true
+    "autoLoadEntities": true,
+    "synchronize": false
 }
