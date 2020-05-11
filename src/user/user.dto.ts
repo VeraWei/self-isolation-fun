@@ -1,8 +1,7 @@
 export class CreateUserDto {
-    name: string;
-    feel: number;
-  }
-
+  name: string;
+  feel: number;
+}
 
 export interface UsersRO {
   users: CreateUserDto[];

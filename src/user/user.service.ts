@@ -29,9 +29,17 @@ export class UserService {
     async create(userData: CreateUserDto): Promise<UserEntity> {
         let user = new UserEntity();
         user.name = userData.name;
-        user.feel = userData.feel;
+        user.feel = userData.feel || 0;
         const newuser = await this.userRepository.save(user);
 
         return newuser;
+    }
+
+    // ideally user name is unique since there is no big data
+    async update(name: string, feel: number): Promise<UserEntity> {
+        let toUpdate = await this.userRepository.findOne({ name});
+        let updated = Object.assign(toUpdate, {feel});
+        const userData = await this.userRepository.save(updated);
+        return userData;
     }
 }
