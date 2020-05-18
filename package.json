@@ -9,8 +9,8 @@
     "node": "v10.14"
   },
   "scripts": {
-    "prebuild": "rimraf dist",
-    "build": "NODE_ENV=PRODUCTION nest build",
+    "prebuild": "NODE_ENV=PRODUCTION rimraf dist",
+    "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
     "start:dev": "nest start --watch",

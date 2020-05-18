@@ -22,7 +22,8 @@ const onlineConnectionOptions = {
   port: 3306,
   synchronize: true,
   autoLoadEntities: true,
-  logging: false
+  logging: false,
+  ssl: true
 };
 
 module.exports =
