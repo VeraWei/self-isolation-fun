@@ -5,6 +5,9 @@
   "author": "",
   "private": true,
   "license": "UNLICENSED",
+  "engines": {
+    "node": "v10.14"
+  },
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "NODE_ENV=PRODUCTION nest build",
