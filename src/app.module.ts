@@ -5,6 +5,12 @@ import { AdviceModule } from './advice/advice.module';
 import { UserModule } from './user/user.module';
 
 @Module({
-  imports: [TypeOrmModule.forRoot(), HttpModule, JokeModule, AdviceModule, UserModule],
+  imports: [
+    TypeOrmModule.forRoot(),
+    HttpModule,
+    JokeModule,
+    AdviceModule,
+    UserModule,
+  ],
 })
 export class AppModule {}
