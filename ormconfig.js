@@ -23,7 +23,6 @@ const onlineConnectionOptions = {
   synchronize: true,
   autoLoadEntities: true,
   logging: false,
-  ssl: true
 };
 
 module.exports =
