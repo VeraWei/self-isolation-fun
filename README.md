@@ -11,38 +11,6 @@ Sometimes you just don't know what to do, and it becomes very easy to draw yours
 - Unit test
 - Mysql
 
-## Installation
-
-```bash
-$ npm install
-```
-
-## Running the app
-
-```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
-```
-
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
 ## Stay in touch
 
 - Author - [Qiuming Wei](https://www.linkedin.com/in/vera-wei-05a873a7/)
