@@ -1,0 +1,8 @@
+ONLINE_HOST = accompanybuddy.mysql.database.azure.com
+ONLINE_USERNAME = wei@accompanybuddy
+ONLINE_PASSWORD = wqm,22909891
+ONLINE_DATABASE = accompany
+
+LOCAL_USERNAME = root
+LOCAL_PASSWORD =
+LOCAL_DATABASE = selfIsolation
