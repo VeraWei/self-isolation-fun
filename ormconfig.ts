@@ -26,6 +26,6 @@ const onlineConnectionOptions = {
 };
 
 module.exports =
-  process.env.NODE_ENV === 'PRODUCTION'
-    ? onlineConnectionOptions
-    : localConnectionOptions;
+  process.env.NODE_ENV === 'DEVELOPMENT'
+    ? localConnectionOptions
+    : onlineConnectionOptions;

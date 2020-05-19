@@ -7,6 +7,6 @@ async function bootstrap() {
   const port = process.env.PORT || 3000;
   await app.listen(port);
   console.log(`Application is running on: ${await app.getUrl()}`);
-  console.log('process.env.PORT', process.env.PORT, port);
+  console.log('process.env', process.env.NODE_ENV, port);
 }
 bootstrap();
