@@ -2399,14 +2399,7 @@ dotenv-expand@5.1.0:
   resolved "https://registry.yarnpkg.com/dotenv-expand/-/dotenv-expand-5.1.0.tgz#3fbaf020bfd794884072ea26b1e9791d45a629f0"
   integrity sha512-YXQl1DSa4/PQyRfgrv6aoNjhasp/p4qs9FjJ4q4cQk+8m4r6k4ZSiEyytKG8f8W9gi8WsQtIObNmKd+tMzNTmA==
 
-dotenv-parse-variables@^0.2.3:
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/dotenv-parse-variables/-/dotenv-parse-variables-0.2.3.tgz#9f509c74b952f3c8dbfda6674fb060398d0ed7fc"
-  integrity sha512-cuog/uu2sD6AGTExLldBqN4kUWNjGG86cSpYGYgZrzgSiy37HkB3OOpMv7cTiQ7SKCMu8WryUS9P6lqwrh0pLg==
-  dependencies:
-    debug "^4.1.1"
-
-dotenv@8.2.0, dotenv@^8.0.0, dotenv@^8.2.0:
+dotenv@8.2.0, dotenv@^8.0.0:
   version "8.2.0"
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-8.2.0.tgz#97e619259ada750eea3e4ea3e26bceea5424b16a"
   integrity sha512-8sJ78ElpbDJBHNeBzUbUVLsqKdccaa/BXF1uPTw3GrvQTBgrQrtObr2mUrE38vzYd8cEv+m/JBfDLioYcfXoaw==
@@ -3407,9 +3400,9 @@ hmac-drbg@^1.0.0:
     minimalistic-crypto-utils "^1.0.1"
 
 hosted-git-info@^2.1.4:
-  version "2.8.8"
-  resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.8.8.tgz#7539bd4bc1e0e0a895815a2e0262420b12858488"
-  integrity sha512-f/wzC2QaWBs7t9IYqB4T3sR1xviIViXJRJTWBlx2Gf3g0Xi5vI7Yy4koXQ1c9OYDGHN9sBy1DQ2AB8fqZBWhUg==
+  version "2.8.9"
+  resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.8.9.tgz#dffc0bf9a21c02209090f2aa69429e1414daf3f9"
+  integrity sha512-mxIDAb9Lsm6DoOJ7xH+5+X4y1LU/4Hi50L9C5sIswK3JzULS4bwk1FvjdBgvYR4bzT4tuUQiC15FE2f5HbLvYw==
 
 html-encoding-sniffer@^1.0.2:
   version "1.0.2"
@@ -4828,14 +4821,6 @@ nestjs-config@^1.4.6:
     lodash.set "^4.3.2"
     reflect-metadata "^0.1.12"
     rxjs "^6.0.0"
-
-nestjs-easyconfig@^1.8.12:
-  version "1.8.12"
-  resolved "https://registry.yarnpkg.com/nestjs-easyconfig/-/nestjs-easyconfig-1.8.12.tgz#1c72a92c304ebff22ed1121a5c2844eac81b69fb"
-  integrity sha512-xeSaUioMqYjqdFyOAMfh3G71KzEdxo4wIiJZW9LYNsM5f+NT+QLnwTiP6hpb4Jmua4K6NaS2gTN92zL/2Be8Aw==
-  dependencies:
-    dotenv "^8.2.0"
-    dotenv-parse-variables "^0.2.3"
 
 next-tick@1:
   version "1.1.0"
