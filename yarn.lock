@@ -2399,14 +2399,7 @@ dotenv-expand@5.1.0:
   resolved "https://registry.yarnpkg.com/dotenv-expand/-/dotenv-expand-5.1.0.tgz#3fbaf020bfd794884072ea26b1e9791d45a629f0"
   integrity sha512-YXQl1DSa4/PQyRfgrv6aoNjhasp/p4qs9FjJ4q4cQk+8m4r6k4ZSiEyytKG8f8W9gi8WsQtIObNmKd+tMzNTmA==
 
-dotenv-parse-variables@^0.2.3:
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/dotenv-parse-variables/-/dotenv-parse-variables-0.2.3.tgz#9f509c74b952f3c8dbfda6674fb060398d0ed7fc"
-  integrity sha512-cuog/uu2sD6AGTExLldBqN4kUWNjGG86cSpYGYgZrzgSiy37HkB3OOpMv7cTiQ7SKCMu8WryUS9P6lqwrh0pLg==
-  dependencies:
-    debug "^4.1.1"
-
-dotenv@8.2.0, dotenv@^8.0.0, dotenv@^8.2.0:
+dotenv@8.2.0, dotenv@^8.0.0:
   version "8.2.0"
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-8.2.0.tgz#97e619259ada750eea3e4ea3e26bceea5424b16a"
   integrity sha512-8sJ78ElpbDJBHNeBzUbUVLsqKdccaa/BXF1uPTw3GrvQTBgrQrtObr2mUrE38vzYd8cEv+m/JBfDLioYcfXoaw==
@@ -4308,9 +4301,9 @@ json5@2.x, json5@^2.1.2:
     minimist "^1.2.5"
 
 json5@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/json5/-/json5-1.0.1.tgz#779fb0018604fa854eacbf6252180d83543e3dbe"
-  integrity sha512-aKS4WQjPenRxiQsC93MNfjx+nbF4PAdYzmd/1JIj8HYzqfbu86beTuNgXDzPknWk0n0uARlyewZo4s++ES36Ow==
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/json5/-/json5-1.0.2.tgz#63d98d60f21b313b77c4d6da18bfa69d80e1d593"
+  integrity sha512-g1MWMLBiz8FKi1e4w0UyVL3w+iJceWAFBAaBnnGKOpNa5f8TLktkbre1+s6oICydWAm+HRUGTmI+//xv2hvXYA==
   dependencies:
     minimist "^1.2.0"
 
@@ -4679,10 +4672,15 @@ minimatch@^3.0.4:
   dependencies:
     brace-expansion "^1.1.7"
 
-minimist@1.2.5, minimist@^1.1.1, minimist@^1.2.0, minimist@^1.2.5:
+minimist@1.2.5:
   version "1.2.5"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
   integrity sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
+
+minimist@^1.1.1, minimist@^1.2.0, minimist@^1.2.5:
+  version "1.2.7"
+  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.7.tgz#daa1c4d91f507390437c6a8bc01078e7000c4d18"
+  integrity sha512-bzfL1YUZsP41gmu/qjrEk0Q6i2ix/cVeAhbCbqH9u3zYutS1cLg00qhrD0M2MVdCcx4Sc0UpP2eBWo9rotpq6g==
 
 mississippi@^3.0.0:
   version "3.0.0"
@@ -4828,14 +4826,6 @@ nestjs-config@^1.4.6:
     lodash.set "^4.3.2"
     reflect-metadata "^0.1.12"
     rxjs "^6.0.0"
-
-nestjs-easyconfig@^1.8.12:
-  version "1.8.12"
-  resolved "https://registry.yarnpkg.com/nestjs-easyconfig/-/nestjs-easyconfig-1.8.12.tgz#1c72a92c304ebff22ed1121a5c2844eac81b69fb"
-  integrity sha512-xeSaUioMqYjqdFyOAMfh3G71KzEdxo4wIiJZW9LYNsM5f+NT+QLnwTiP6hpb4Jmua4K6NaS2gTN92zL/2Be8Aw==
-  dependencies:
-    dotenv "^8.2.0"
-    dotenv-parse-variables "^0.2.3"
 
 next-tick@1:
   version "1.1.0"
